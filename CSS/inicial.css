@@ -97,7 +97,7 @@ body{
 }
 
 .contenedor-main{
-    padding-top: 70px;
+    padding-top: 10px;
 }
 /*------------------Footer----------------*/
 
@@ -616,8 +616,8 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 50px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 40px;
     padding: 200px 12px;
    
 }
