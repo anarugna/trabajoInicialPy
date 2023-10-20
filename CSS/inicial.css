@@ -244,7 +244,79 @@ body{
      background-color: rgba(239, 239, 239, 0.37);
      transition: 0.5S;
  }
+
+ /**------------------Cursos------------------------**/
+
+.container-cartas{
+    margin-top: 500px;
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+    padding: 80px 0;
+    
+}
+.titulo-cartas{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 100px;
+	text-align: center;
+	color:#ea8227;
+    font-size: 60px;
+   
+}
+.carta{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
  
+    
+}
+.carta:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.carta img{
+	width: 100%;
+	height: 210px;
+}
+.carta .contenido-carta{
+	padding: 15px;
+	text-align: center;
+}
+.titulo-cartas h2 {
+    font-size: 30px;}
+
+
+.carta .contenido-carta p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.carta .contenido-carta a{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  background: #ea8227;
+  padding: 16px 20px;
+  border-radius: 5px;
+  display: inline-block;
+
+}
+
+
+.carta a:hover{
+  background-color:#ea822783;
+  transition: 0.5S; }
+
 /*------------------Formulario----------------*/
 
 
