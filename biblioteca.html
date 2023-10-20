@@ -25,10 +25,63 @@
                 <li><a  href="./index.html" target="_blank">Inicio</a></li>
                 <li><a  href="./cursos.html" target="_blank">Cursos</a></li>
                 <li><a  href="./contacto.html" target="_blank">Contacto</a></li>
-                <li><a  href="./acercade.html" target="_blank">Acerca de mi</a></li>
+                <li><a  href="./biblioteca.html" target="_blank">Biblioteca</a></li>
             </ul> 
         </nav>
     </header>
+    <main class="contenedor-biblioteca">
+        <h1>Buscar Libros</h1>
+
+        <form id="search-form">
+          <label for="title">Título:</label>
+          <input type="text" id="title" name="title">
+      
+          <label for="author">Autor:</label>
+          <input type="text" id="author" name="author">
+      
+          <button type="submit">Buscar</button>
+        </form>
+      
+        <div id="results"></div>
+      
+        <script>
+          (docu(document).ready(function()) {
+            $('#search-form').submit(function(event) {
+              event.preventDefault();
+      
+              var title = $('#title').val();
+              var author = $('#author').val();
+      
+              // Realizar solicitud a la API
+              $.ajax({
+                url: 'https://www.googleapis.com/books/v1/volumes',
+                method: 'GET',
+                data: {
+                  title: title,
+                  author: author
+                },
+                success: function(response) {
+                  // Mostrar resultados en la
+                 // Mostrar resultados en la página
+                  var results = response.results;
+                  var html = '';
+      
+                  for (var i = 0; i < results.length; i++) {
+                    html += '<p>Título: ' + results[i].title + '</p>';
+                    html += '<p>Autor: ' + results[i].author + '</p>';
+                    html += '<hr>';
+                  }
+      
+                  $('#results').html(html);
+                },
+                 error: function() {
+                  alert('Error al buscar libros');
+                }
+              });
+            });
+      });
+        </script>
+    </main>
 
     <footer class="pie-pagina">
         <div class="seccion-1">

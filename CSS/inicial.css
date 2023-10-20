@@ -681,7 +681,10 @@ iframe{
     
 
 }
-
+/*------------------Biblioteca----------------*/
+.contenedor-biblioteca{
+    padding:180px;
+}
 
 
 /*------------Pantallas Largas---------------------*/
