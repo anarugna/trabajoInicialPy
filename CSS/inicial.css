@@ -244,7 +244,294 @@ body{
      background-color: rgba(239, 239, 239, 0.37);
      transition: 0.5S;
  }
+/***----------------Pagina Principal--------------------***/
 
+.contenedor-principal hr{
+    width: 30%;
+    height: 5px;
+    background-color:rgb(238, 191, 153);
+    border: none;
+    border-radius: 16px;
+    margin: 16px auto;
+}
+.productos p{
+    font-size: 16px;
+    text-align: center;
+    color:black;
+    padding: 5px;
+    margin: 0 50px;
+
+}
+.imagen-productos img{
+        display: block;
+        margin: auto;
+        object-fit: cover;
+        height: 100%;
+}
+
+.contenedor-principal{
+    width: 100%;
+    height: 100%;
+    background-color:whitesmoke;
+  
+
+    
+}
+.contenedor-principal h1{
+    font-size: 32px;
+    text-align: center;
+    color:rgb(238, 191, 153);
+}
+
+.contenedor-principal h2{
+    font-size: 20px;
+    color:black; 
+    padding: 24px;
+    text-align: center;
+
+}
+
+.contenedor-principal p{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+
+}
+
+/***cuidado capilar***/
+.Cuidado-capilar{
+    width: 100%;
+    padding-top: 24px;
+}
+
+.imagen-capilar img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    height:100%;
+}
+.productos-capilares{
+    width: 100%;
+    background-color: whitesmoke;
+    padding-top: 24px;
+    display:flex;
+    flex-direction: row;
+}
+.lociones-capilar{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+    margin:10px
+}
+
+.lociones-capilar img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+.shampoos{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+    margin:10px;
+}
+
+.shampoos img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+.acondicionador{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+    margin: 10px;
+}
+
+
+.acondicionador img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+/***Cuidado Facial***/
+.Cuidado-facial{
+    width: 100%;
+    padding-top: 24px;
+}
+
+
+.imagen-facial img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    height:100%;
+}
+.productos-faciales{
+    width: 100%;
+    background-color: whitesmoke;
+    padding-top: 24px;
+    display:flex;
+    flex-direction: row;
+}
+.aguas-miscelares{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+    margin:10px
+}
+
+.aguas-miscelares img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+.cremas{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+    margin:10px
+}
+
+.cremas img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+.Mascarillas{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+    margin:10px
+}
+
+.Mascarillas img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+/*** Cuidado Corporal***/
+.Cuidado-corporal{
+    width: 100%;
+    padding-top: 24px;
+    display: flex;
+}
+
+.imagen-corporal img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    height:100%;
+}
+.productos-corporales{
+    width: 100%;
+    background-color: whitesmoke;
+    padding-top: 24px;
+    display:flex;
+    flex-direction: row;
+}
+
+.jabones{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+    margin:10px
+}
+
+.jabones img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+.crema-corporal{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+    margin:10px
+}
+
+
+.crema-ccorporal img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+.aceite-corporal{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+    margin:10px
+}
+
+.aceite-corporal img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+
+/*Recetas**/
+
+
+
+.imagen-recetas img{
+        display: block;
+        margin: auto;
+        object-fit: cover;
+        height: 100%;
+}
+.tipo-recetas{
+    width: 100%;
+    background-color: whitesmoke;
+    padding-top: 24px;
+    display:flex;
+    flex-direction: row;
+}
+
+.recetas-magistrales{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+    margin:10px
+}
+
+
+.recetas-magistrales img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+.recetas-caseras{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+    margin:10px
+}
+
+
+.recetas-caseras img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+.aromaterapia{
+    font-size: 14px;
+    text-align: center;
+    color:black; 
+    margin:10px
+}
+
+
+.aromaterapia img{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
  /**------------------Cursos------------------------**/
 
 .container-cartas{
