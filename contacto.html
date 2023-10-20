@@ -30,9 +30,41 @@
         </nav>
     </header>
     
-        <main class="contenedor-main">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.2193308172127!2d-58.41496914025606!3d-34.58580322003283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57fcb58a6cd%3A0x9522399c45a9fcf5!2sFarmacia%20Park!5e0!3m2!1sen!2sar!4v1696772402771!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </main>
+    <main class="contenedor-main">
+        <div class="container-form">
+            <div class="info-form">
+                
+                <h2>Contactanos</h2>
+                <p>Dejanos tu consulta o sugerencia. Acá estamos para lo que necesites.</p>
+                <a href="#"> <i class="fa fa-phone"></i>11-25882794</a>
+                <a href="#"><i class="fa fa-envelope"></i>farmacia@salud.com</a>
+                <a href="#"><i class="fa fa-map-marked"></i>Av. Julio A. Roca 4298, Florida Oeste, Galpón 330</a>
+
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.7795234531977!2d-58.525262900000044!3d-34.559137299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb71604c851b3%3A0x8c46042e279e24db!2sJ.A.%20Roca%204298%2C%20Villa%20Maip%C3%BA%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697590443918!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="formulario">
+                <form  autocomplete="off" name=valida>
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
+                    <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
+                    <td class="campo">Curso: </td><br>
+                    <td>
+                    <select class="campo" name=motivo>
+                    <option value="Elegir">Elegir
+                    <option value="Comercial">Salud Bucal
+                    <option value="Clientes">Salud Estética
+                    <option value="Proveedores">Salud Corporal
+                    </select>
+                    <textarea name="mensaje" placeholder="Ingresa tu mensaje" cols="30" rows="10"></textarea>
+                    <input type="submit" name="enviar" value="ENVIAR" class="btn-enviar" onclick="valida_envia()">
+                </form>
+
+            </div>
+
+
+        </div>
+    </main>
         
         <footer class="pie-pagina">
             <div class="seccion-1">
