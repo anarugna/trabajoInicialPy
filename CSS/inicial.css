@@ -617,7 +617,7 @@ body{
     grid-template-columns: repeat(2,1fr);
     grid-gap: 50px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 200px 12px;
    
 }
