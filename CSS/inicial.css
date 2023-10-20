@@ -19,8 +19,7 @@ nav{
     position: fixed;
     top: 0;
     bottom: 0;
-    z-index: 0;
-   
+    z-index: 3;
 }
 .enlace{
     position: absolute;
@@ -54,8 +53,8 @@ nav ul li{
 
 nav ul li a{
     color: black;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -78,6 +77,12 @@ li a.active, li a:hover{
 
 #check{
     display: none;
+}
+main .contenedor-main{
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+
 }
 /*------------------body----------------*/
 body{
@@ -155,6 +160,89 @@ body{
  }
  .pie-pagina .seccion-2 small{
      font-size: 15px;
+ }
+ /*------------------Banner Página Principal---------------*/
+
+.banner{
+    margin-top: 75px;
+     width: 100%;
+     height: 700px;
+     animation: banner 10s infinite linear alternate ;
+     background-size: 100% 100%;
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ 
+ 
+ }
+ @keyframes banner {
+     0%, 20%{
+     background-image: url(../images/banner1.jpg);
+     }
+     25%, 45%{
+     background-image: url(../images/banner2.jpg);
+     }
+ 
+      50%, 70%{
+     background-image: url(../images/banner3.jpg);
+     }
+     75%, 100%{
+     background-image: url(../images/banner4.jpg);
+      }
+ }
+ .capa{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background: rgba(0, 0, 0, 0.6);
+ }
+ 
+ .infor{
+     z-index: 1;
+     width: 100%;
+     max-width: 550px;
+     text-align: center;
+ }
+ 
+ .infor h1{
+     color: #ebe6e1;
+     font-size: 45px;
+     margin-bottom: 20px;
+     letter-spacing: 1px;
+ }
+ .infor h2{
+     color: #ebe6e1;
+     font-size: 20px;
+     margin-bottom: 20px;
+     letter-spacing: 1px;
+ }
+ .infor i{
+     color: #f5f0f0;
+     font-size: 30px;
+     margin-bottom: 5px;
+ }
+ 
+ .infor p{
+     color: #f5f0f0;
+     line-height: 1.7;
+     margin-bottom: 30px;
+ }
+ 
+ .infor a{
+     color: #ffffff;
+     text-decoration: none;
+     font-weight: bold;
+     background: #ea8227;
+     padding: 16px 37px;
+     border-radius: 50px;
+     display: inline-block;
+ }
+ .infor a:hover{
+     background-color: rgba(239, 239, 239, 0.37);
+     transition: 0.5S;
  }
  
 
