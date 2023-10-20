@@ -45,42 +45,41 @@
         <div id="results"></div>
       
         <script>
-          (docu(document).ready(function()) {
-            $('#search-form').submit(function(event) {
-              event.preventDefault();
-      
-              var title = $('#title').val();
-              var author = $('#author').val();
-      
-              // Realizar solicitud a la API
-              $.ajax({
-                url: 'https://www.googleapis.com/books/v1/volumes',
-                method: 'GET',
-                data: {
-                  title: title,
-                  author: author
-                },
-                success: function(response) {
-                  // Mostrar resultados en la
-                 // Mostrar resultados en la página
-                  var results = response.results;
-                  var html = '';
-      
-                  for (var i = 0; i < results.length; i++) {
-                    html += '<p>Título: ' + results[i].title + '</p>';
-                    html += '<p>Autor: ' + results[i].author + '</p>';
-                    html += '<hr>';
+            $(document).ready(function() {
+              $('#search-form').submit(function(event) {
+                event.preventDefault();
+        
+                var title = $('#title').val();
+                var author = $('#author').val();
+        
+                // Realizar solicitud a la API
+                $.ajax({
+                  url: 'https://www.googleapis.com/books/v1/volumes',
+                  method: 'GET',
+                  data: {
+                    title: title,
+                    author: author
+                  },
+                  success: function(response) {
+                    // Mostrar resultados en la página
+                    var results = response.results;
+                    var html = '';
+        
+                    for (var i = 0; i < results.length; i++) {
+                      html += '<p>Título: ' + results[i].title + '</p>';
+                      html += '<p>Autor: ' + results[i].author + '</p>';
+                      html += '<hr>';
+                    }
+        
+                    $('#results').html(html);
+                  },
+                  error: function() {
+                    alert('Error al buscar libros');
                   }
-      
-                  $('#results').html(html);
-                },
-                 error: function() {
-                  alert('Error al buscar libros');
-                }
+                });
               });
             });
-      });
-        </script>
+          </script>
     </main>
 
     <footer class="pie-pagina">
