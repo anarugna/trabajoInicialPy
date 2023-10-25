@@ -11,8 +11,96 @@
 }
 
 /*------------------nav----------------*/
-
 nav{
+    background-color: hsl(41, 84%, 81%);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+}
+.enlace{
+    position: absolute;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif; 
+    font-weight: bolder;
+    color: #ea8227;
+
+}
+
+.enlace p{
+    padding: 10px;
+}
+    
+.logo{
+    height: 50px;
+}
+.active {
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+  }
+.active a span:first-child {
+    display: inline-block;
+    padding: 10px;
+  }
+.active a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    color:black;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1.5px 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+.active a span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+  }
+  .active a span {
+    transition: transform 0.2s ease-out;
+  }
+  .active a:hover span:first-child {
+    transform: translateY(100%);
+  }
+  .active a:hover span:last-child {
+    transform: none;
+    background-color: rgba(242, 140, 15, 0.685);
+    transition: 0.5S;
+  }
+  .active[data-animation="to-top"] a span:last-child {
+    transform: translateY(100%);
+  }
+  .active[data-animation="to-top"] a:hover span:first-child {
+    transform: translateY(-100%);
+  }
+  .active[data-animation="to-right"] a span:last-child {
+    transform: translateX(-100%);
+  }
+  .active[data-animation="to-right"] a:hover span:first-child {
+    transform: translateX(100%);
+  }
+  .active[data-animation="to-left"] a span:last-child {
+    transform: translateX(100%);
+  }
+  .active[data-animation="to-left"] a:hover span:first-child {
+    transform: translateX(-100%);
+  }
+
+/**nav{
     background-color: hsl(41, 84%, 81%);
     height: 80px;
     width: 100%;
@@ -64,7 +152,7 @@ li a.active, li a:hover{
     background-color: rgba(242, 140, 15, 0.685);
     transition: 0.5S;
 
-}
+}**/
 .checkbtn{
     font-size: 30px;
     color: black;
