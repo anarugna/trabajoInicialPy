@@ -39,6 +39,11 @@ nav{
 .logo{
     height: 50px;
 }
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
 .active {
     display: flex;
     justify-content: right;
@@ -70,6 +75,25 @@ nav{
     justify-content: center;
     transform: translateY(-100%);
   }
+  .active a span{
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 20px;
+    margin: 0 5px;
+}
+
+nav ul li span{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
   .active a span {
     transition: transform 0.2s ease-out;
   }
@@ -99,60 +123,6 @@ nav{
   .active[data-animation="to-left"] a:hover span:first-child {
     transform: translateX(-100%);
   }
-
-/**nav{
-    background-color: hsl(41, 84%, 81%);
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    z-index: 3;
-}
-.enlace{
-    position: absolute;
-    padding: 15px;
-    display: flex;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif; 
-    font-weight: bolder;
-    color: #ea8227;
-
-}
-
-.enlace p{
-    padding: 10px;
-}
-    
-.logo{
-    height: 50px;
-}
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a{
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-li a.active, li a:hover{
-    background-color: rgba(242, 140, 15, 0.685);
-    transition: 0.5S;
-
-}**/
 .checkbtn{
     font-size: 30px;
     color: black;
@@ -818,11 +788,12 @@ iframe{
         text-align: center;
         transition: all .5s;
         border: #929292;
+        flex-direction: column;
 
     }
     nav ul li{
         display: block;
-        margin: 50px 0;
+        margin: 30px 0;
         line-height: 30px;
     }
     nav ul li a{
@@ -876,7 +847,7 @@ iframe{
 /*-----------------Celulares---------------------*/
 
  @media only screen and (max-width: 600px){
-    .enlace p{
+    .enlace span{
        /* text-indent:-666em;
         overflow:hidden;*/
         font-size: 15px;
