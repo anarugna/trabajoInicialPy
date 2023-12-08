@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request,redirect
 from flaskext.mysql import MySQL
+
 from datetime import datetime 
 app=Flask(__name__)
 
@@ -12,18 +13,18 @@ mysql.init_app(app)
 
 @app.route("/")
 def index():
-    sql = "SELECT * FROM `sistema`.`empleados`;"
+    sql = "SELECT * FROM `sistema`.`usuario`;"
     conn=mysql.connect()
     cursor=conn.cursor()
     cursor.execute(sql)
     empleados=cursor.fetchall()
     # print(empleados)
     conn.commit()
-    return render_template("index.html",empleados=empleados)
+    return render_template("usuario.html",empleados=empleados)
 
 @app.route("/create")
 def create():
-    return render_template("create.html")
+    return render_template("index.html")
 
 
 @app.route("/store",methods=["POST"])

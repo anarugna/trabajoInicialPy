@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="/CSS/inicial.css">
+    <link rel="icon" href="/images/logoFarmacia-2.png">
+    <script src="https://kit.fontawesome.com/c837c3392d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <!-- <a class="logo"><img src="logoFarmacia.png" alt="Logo de la página" height="100px"></a> -->
+            <!--<a href="logoFarmacia.png" class="logoFarmacia" target="_blank">"Nuestra salud es importante"</a>--> 
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <a href="/templates/index.html" class="enlace">
+                   <img src="/images/logoFarmacia-2.png" alt="" class="logo">
+                   <p>Farmacia Salud</p> 
+                </a>
+                <ul class="active">
+                    <li>
+                        <a  href="/templates/index.html">
+                            <span> Inicio </span>
+                            <span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="/templates/cursos.html">
+                            <span> Cursos </span>
+                            <span>
+                                <i class="fa-solid fa-microscope" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="/templates/contacto.html" >
+                            <span> Contacto </span>
+                            <span>
+                                <i class="fas fa-envelope-open-text" aria-hidden="true"></i> 
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="/templates/biblioteca.html" >
+                            <span> Biblioteca </span>
+                            <span>
+                                <i class="fa-solid fa-book" aria-hidden="true"></i> 
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="/templates/usuario.html" >
+                            <span>Usuario </span>
+                            <span>
+                               <i class="fa-solid fa-user" aria-hidden="true"></i> 
+                            </span>
+                        </a>
+                    </li>
+
+                </ul> 
+            </nav>
+    </header>
+<body>
+
+    <main class="contenedor-main">
+        <div class="container-form">
+            <div class="info-form">
+                
+                <h2>Validación de Usuarios</h2>
+                <p>Te invitamos a validar tu pago y así poder acceder a los diferentes cursos de la mano de grandes profesionales. <b>¡Recuerda adjuntar el comprobante!</b> </p>
+                <img src="/images/usuario-removebg-preview.png" alt="" width="50%">
+
+               
+
+            </div>
+            <div class="formulario">
+                <form  autocomplete="off" name=valida>
+                    <b>Nombre y Apellido:</b>
+                    <br>
+                    <input type="text" name="nombre"  class="campo">
+                    <br>
+                    <b>Correo Electronico:</b>
+                    <br>
+                    <input type="email" name="email"  class="campo">
+                    <br>
+                    <br>
+                    <b>Comprobante de pago</b>
+                    <br>
+                    <input type="file" name="txtFoto" id="txtFoto">
+                    <br>
+                    <br>
+          
+                  
+                    <input type="submit" name="enviar" value="Enviar" class="btn-enviar" onclick="valida_envia()">
+                </form>
+
+            </div>
+
+
+        </div>
+    </main>
+
+
+
+    <footer class="pie-pagina">
+        <div class="seccion-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/images/logoFarmacia-2.png" alt="Logo de Farmacia">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Acerca de Nosotros</h2>
+                <p>Nuestro equipo está compuesto por profesionales altamente capacitados y apasionados por la atención al cliente y la industria farmacéutica. Estamos dedicados a brindar información precisa y orientación para que tomes decisiones informadas sobre tu salud.</p>
+                <p> Te invitamos a visitarnos en nuestras redes sociales y descubrir la diferencia que Farmacia Salud puede hacer en tu vida. ¡Esperamos poder servirte y acompañarte en tu camino hacia una salud plena!</p>
+            </div>
+            <div class="box">
+                <h2>Buscanos en Nuestras Redes Sociales</h2>
+                <div class="red-social">
+                    <a target="_blank" href="https://es-la.facebook.com/" ><i class="fa-brands fa-square-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-square-youtube"></i></a>
+                    <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="seccion-2">
+            <small>&copy; 2023 <b>Farmacia Salud</b> -Todos los Derechos Reservados </small>
+        </div>
+
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+</html>
