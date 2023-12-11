@@ -761,6 +761,11 @@ h1{
     font-size: medium;
 }
 
+.edit{
+    margin-top: 70%;
+    padding: 50px;
+}
+
 /*------------Pantallas Largas---------------------*/
 @media only screen and (max-width: 1200px){
     
