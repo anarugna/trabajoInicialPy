@@ -30,7 +30,7 @@ def create():
     return render_template('usuario.html')
 
 
-@app.route('/store',methods=['POST'])
+@app.route('/storeusuario',methods=['POST'])
 def storage():
     _nombre=request.form['txtnombre']
     _correo=request.form['txtemail']
