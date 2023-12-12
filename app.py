@@ -80,7 +80,7 @@ def update():
     _email=request.form['txtemail']
     _foto=request.files['txtfoto']
     id=request.form['txtID']
-    sql = "UPDATE `usuario`.`inscribite` SET `Nombre y Apellido`=%s, `Correo Electrónico`=%s WHERE id=%s;"
+    sql = "UPDATE `usuario`.`inscribite` SET `Nombre y Apellido`=%s, `Correo Electrónico`=%s, `Comprobante de pago`=%s WHERE id=%s;"
     datos=(_nombre,_email,_foto.filename,id)
     conn = mysql.connect()
     cursor = conn.cursor()
