@@ -49,7 +49,7 @@ def storage():
     cursor=conn.cursor()
     cursor.execute(sql,datos)
     conn.commit()
-    return render_template('/')
+    return redirect('/')
     
 
 @app.route("/destroy/<int:id>")
