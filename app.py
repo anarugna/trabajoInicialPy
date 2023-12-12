@@ -15,7 +15,7 @@ app.config['MYSQL_DATABASE_BD']='usuario'
 mysql.init_app(app)
 
 @app.route("/")
-def usuario():
+def inscriptos():
     sql = "SELECT * FROM `usuario`.`inscribite`;"
     conn=mysql.connect()
     cursor=conn.cursor()
@@ -23,25 +23,25 @@ def usuario():
     db_inscribite=cursor.fetchall()
     # print(inscribite)
     conn.commit()
-    return render_template('usuario.html',inscribite = db_inscribite)
+    return render_template('inscriptos.html',inscribite = db_inscribite)
 
-@app.route('/create')
-def create():
+@app.route('/usuario')
+def usuario():
     return render_template('usuario.html')
 
 
 @app.route('/storeusuario',methods=['POST'])
 def storage():
     _nombre=request.form['txtnombre']
-    _correo=request.form['txtemail']
-    _Foto=request.files['txtFoto']
+    _email=request.form['txtemail']
+    _foto=request.files['txtfoto']
 #     now= datetime.now()
 #     tiempo= now.strftime("%Y%H%M%S")
 #     if _foto.filename!='':
 #         nuevoNombreFoto=tiempo+_foto.filename
 #         _foto.save("uploads/"+nuevoNombreFoto)
 
-    datos=(_nombre,_correo,_Foto)
+    datos=(_nombre,_email,_foto.filename)
     sql = "INSERT INTO `usuario`.`inscribite` (`id`, `Nombre y Apellido`, `Correo Electrónico`, `Comprobante de Pago`) VALUES (NULL, %s, %s, %s);"
     # datos=(_nombre,_correo,nuevoNombreFoto)
 
@@ -76,12 +76,12 @@ def edit(id):
 
 @app.route('/update', methods=['POST'])
 def update():
-    _nombre=request.form['txtNombre']
-    _correo=request.form['txtCorreo']
-    _Foto=request.files['txtFoto']
+    _nombre=request.form['txtnombre']
+    _email=request.form['txtemail']
+    _foto=request.files['txtfoto']
     id=request.form['txtID']
     sql = "UPDATE `usuario`.`inscribite` SET `Nombre y Apellido`=%s, `Correo Electrónico`=%s WHERE id=%s;"
-    datos=(_nombre,_correo,_Foto,id)
+    datos=(_nombre,_email,_foto.filename,id)
     conn = mysql.connect()
     cursor = conn.cursor()
     
@@ -94,4 +94,4 @@ def uploads(nombreFoto):
     return send_from_directory(app.config['CARPETA'], nombreFoto)
 
 if __name__=="__main__":
-    app.run(debug=True, port=5001)
+    app.run(debug=True)
