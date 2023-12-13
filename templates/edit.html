@@ -68,8 +68,8 @@
         </nav>
     </header>
     <main class="contenedor-main-edit">
-        <h1>Editar</h1>
-        <h1>Formulario</h1>
+        <h1>Editar Formularios</h1>
+        <br>
         {% for inscribite in inscribite %}
         <form method="post" action="/update" enctype="multipart/form-data">
     
@@ -86,7 +86,7 @@
             <input type="file" name="txtfoto" id="txtfoto">
             <br>
             <br>
-            <input type="submit" value="Agregar">
+            <input type="submit" value="Agregar" class="btn-enviar">
     
         </form>
         {% endfor %}

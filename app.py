@@ -14,6 +14,7 @@ app.config['MYSQL_DATABASE_PASSWORD']=''
 app.config['MYSQL_DATABASE_BD']='usuario'
 mysql.init_app(app)
 
+
 @app.route("/")
 def inscriptos():
     sql = "SELECT * FROM `usuario`.`inscribite`;"
@@ -24,6 +25,23 @@ def inscriptos():
     # print(inscribite)
     conn.commit()
     return render_template('inscriptos.html',inscribite = db_inscribite)
+
+@app.route('/index')
+def usuario():
+    return render_template('index.html')
+
+@app.route('/cursos')
+def usuario():
+    return render_template('cursos.html')
+
+@app.route('/contacto')
+def usuario():
+    return render_template('contacto.html')
+
+@app.route('/biblioteca')
+def usuario():
+    return render_template('biblioteca.html')
+
 
 @app.route('/usuario')
 def usuario():

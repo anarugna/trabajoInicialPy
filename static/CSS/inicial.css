@@ -757,20 +757,43 @@ iframe{
    
 }
 
-h1{
-    font-size: medium;
-}
+
 
 .contenedor-main-edit{
     margin-top: 100px;
     padding: 0px 100px;
     margin-bottom: 75px;
+  
+}
+
+.contenedor-main-edit h1{
+    font-size: 30px;
 }
 .contenedor-main-inscriptos{
     margin-top: 100px;
     padding: 0px 100px;
     margin-bottom: 75px;
+   
 }
+
+.contenedor-main-inscriptos h1{
+  font-size: 30px;
+}
+
+.btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background:  #ea8227;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease; }
+
+.btn-enviar:hover{
+        background: rgba(242, 140, 15, 0.685);
+    }
 /*------------Pantallas Largas---------------------*/
 @media only screen and (max-width: 1200px){
     
