@@ -761,11 +761,16 @@ h1{
     font-size: medium;
 }
 
-.edit{
-    margin-top: 50%;
-    padding: 50px;
+.contenedor-main-edit{
+    margin-top: 100px;
+    padding: 0px 100px;
+    margin-bottom: 75px;
 }
-
+.contenedor-main-inscriptos{
+    margin-top: 100px;
+    padding: 0px 100px;
+    margin-bottom: 75px;
+}
 /*------------Pantallas Largas---------------------*/
 @media only screen and (max-width: 1200px){
     

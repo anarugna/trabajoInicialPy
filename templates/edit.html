@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit</title>
-    <link rel="stylesheet" href="/CSS/inicial.css">
-    <link rel="icon" href="/images/logoFarmacia-2.png">
+    <link rel="stylesheet" href="/static/CSS/inicial.css">
+    <link rel="icon" href="/static/images/logoFarmacia-2.png">
     <script src="https://kit.fontawesome.com/c837c3392d.js" crossorigin="anonymous"></script>
 </head>
 </head>
@@ -19,7 +19,7 @@
                 <i class="fa-solid fa-bars"></i>
             </label>
             <a href="#" class="enlace">
-               <img src="/images/logoFarmacia-2.png" alt="" class="logo">
+               <img src="/static/images/logoFarmacia-2.png" alt="" class="logo">
                <p>Farmacia Salud</p> 
             </a>
             <ul class="active">
@@ -49,15 +49,15 @@
                 </li>
                 <li>
                     <a  href="/templates/biblioteca.html" >
-                        <span> biblioteca </span>
+                        <span> Biblioteca </span>
                         <span>
                             <i class="fa-solid fa-book" aria-hidden="true"></i> 
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a  href="/templates/usuario.html" >
-                        <span>Usuario </span>
+                    <a  href="/templates/inscriptos.html">
+                        <span>Inscriptos </span>
                         <span>
                            <i class="fa-solid fa-user" aria-hidden="true"></i> 
                         </span>
@@ -67,7 +67,7 @@
         </nav>
         </nav>
     </header>
-    <main class="edit">
+    <main class="contenedor-main-edit">
         <h1>Editar</h1>
         <h1>Formulario</h1>
         {% for inscribite in inscribite %}
@@ -97,7 +97,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="/images/logoFarmacia-2.png" alt="Logo de Farmacia">
+                        <img src="/static/images/logoFarmacia-2.png" alt="Logo de Farmacia">
                     </a>
                 </figure>
             </div>
